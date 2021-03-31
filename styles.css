@@ -49,7 +49,7 @@ a:hover {
 /*==HEADER STYLES==*/
 
 .cover {
-  background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+  background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;/*A background tulajdonságban van egy új rész: 70% center/cover. Ezt a rövidítést (shorthand) akkor használjuk, amikor egyszerre szeretnénk megadni a háttér méretét és pozícióját. Az első része (70% center) adja meg a kép pozícióját. Jelen esetben ez kissé balra mozgatja a fotót az X tengelyen, hogy a menyasszony feje ne lógjon ki a képernyőről.*/
   height: 100vh;
   width: 100vw;
   color: hsla(0,0%,100%,.9);
@@ -101,4 +101,27 @@ h1 {
   background-color: #fff;
   vertical-align: middle;
   margin: .5rem;
+}
+
+/*==LOCATIONS STYLES==*/
+
+.locations h3 {
+  font-size: 1.5rem;
+}
+.sites img {
+  width: 8rem;
+}
+
+.sites div {
+  font-family: Muli, sans-serif;
+  letter-spacing: .1rem;
+}
+
+.sites::after {
+  display: block;
+  content: "";
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
 }
