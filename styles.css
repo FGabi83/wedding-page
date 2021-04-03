@@ -113,14 +113,15 @@ h1 {
 
 .locations h3 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .sites img {
   width: 8rem;
 }
 
 .sites div {
-  font-family: Muli, sans-serif;
-  letter-spacing: .1rem;
+  font-family: Mulish, sans-serif;
+  
 }
 
 .sites::after {
@@ -137,13 +138,28 @@ h1 {
 .program {
   width: 100vw;
   text-align: left;
-  font-family: Muli, sans-serif;
+  font-family: Mulish, sans-serif;
 }
 
 .program h2 {
   margin-top: 1rem;
+  text-align: center;
 }
 
 .program blockquote {
   font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+/*==GIFTS==*/
+
+.gifts img {
+  width: 8rem;
+}
+
+.gifts p:last-child {
+  margin-bottom: 0;
 }
