@@ -45,6 +45,12 @@ a:hover {
   color: #eda087;
   transition: color .15s ease-in-out;
 }
+/*dark sections*/
+
+.dark {
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+}
 
 /*==HEADER STYLES==*/
 
@@ -124,4 +130,20 @@ h1 {
   width: 25vw;
   margin: 1.5rem auto;
   background-color: #444349;
+}
+
+/*==PROGRAM==*/
+
+.program {
+  width: 100vw;
+  text-align: left;
+  font-family: Muli, sans-serif;
+}
+
+.program h2 {
+  margin-top: 1rem;
+}
+
+.program blockquote {
+  font-style: italic;
 }
