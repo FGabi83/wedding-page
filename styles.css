@@ -133,7 +133,7 @@ h1 {
   background-color: #444349;
 }
 
-/*==PROGRAM==*/
+/*==PROGRAM STYLES==*/
 
 .program {
   width: 100vw;
@@ -154,7 +154,7 @@ h1 {
   letter-spacing: .025rem;
 }
 
-/*==GIFTS==*/
+/*==GIFTS STYLES==*/
 
 .gifts img {
   width: 8rem;
@@ -164,7 +164,7 @@ h1 {
   margin-bottom: 0;
 }
 
-/*==Q & A ==*/
+/*==Q & A STYLES==*/
 
 .Q-A {
   width: 100vw;
@@ -219,4 +219,70 @@ footer p {
 
 footer small {
   line-height: 1.5;
+}
+
+/*==SCREEN ADJUST==*/
+
+/*header*/
+@media (min-width: 768px){
+  .tagline {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+  
+  h1 {
+    font-size: 7rem;
+  }
+  
+  .date {
+    font-size: 1.25rem;
+    }
+  
+  .headline-text {
+    width: 50%;
+    padding: 1.25rem;
+    border-radius: 4px;
+  }
+  
+  .cover {
+    background: url(assets/wedding-landing-cover.jpg) no-repeat center/cover;
+  }
+}
+
+/*locations*/
+@media (min-width: 768px) {
+  .sites {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+    vertical-align: top;
+  }
+  
+  .sites::after {
+    display: none;
+  }
+}
+
+/*program*/
+@media (min-width: 768px) {
+.program-wrapper {
+  width: 30vw;
+  margin: 0 auto;
+ }
+}
+
+/*Q & A*/
+@media (min-width: 768px){
+.faq {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.5rem;
+  margin: .5rem;
+}
+
+  .faq p:last-child::after {
+    display: none;
+  }
 }
