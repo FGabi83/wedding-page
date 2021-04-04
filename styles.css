@@ -193,3 +193,30 @@ h1 {
   margin: 1.5rem auto;
   background-color: #d2ba87;
 }
+
+/*==FOOTER STYLES==*/
+
+footer {
+  background-color: #606060;
+  color: #fff;
+  width: 100vw;
+  height: 10vh;
+  font-family: Mulish, sans-serif;
+  font-size: .9rem;
+  text-align: center;
+  display: table
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
