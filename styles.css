@@ -160,6 +160,36 @@ h1 {
   width: 8rem;
 }
 
-.gifts p:last-child {
+.gifts .answer:last-child {
   margin-bottom: 0;
+}
+
+/*==Q & A ==*/
+
+.Q-A {
+  width: 100vw;
+}
+
+.Q-A h2 {
+  margin-top: 1rem;
+}
+
+.question, .answer {
+  font-family: Mulish, sans-serif;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: .5rem ;
+}
+
+.faq p:last-child::after {
+  display: block;
+  content:"";
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
 }
