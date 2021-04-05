@@ -286,3 +286,10 @@ footer small {
     display: none;
   }
 }
+
+/*footer*/
+@media (min-width: 768px) {
+  footer {
+    min-height: 7vh;
+  }
+}
