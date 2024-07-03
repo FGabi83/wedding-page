@@ -57,7 +57,7 @@ a:hover {
 
 .cover {
   background: url(assets/wedding-landing-newcover.jpg) no-repeat center /cover;/*A background tulajdonságban van egy új rész: 70% center/cover. Ezt a rövidítést (shorthand) akkor használjuk, amikor egyszerre szeretnénk megadni a háttér méretét és pozícióját. Az első része (70% center) adja meg a kép pozícióját. Jelen esetben ez kissé balra mozgatja a fotót az X tengelyen, hogy a menyasszony feje ne lógjon ki a képernyőről.*/
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   color: hsla(0,0%,100%,.9);
   text-align: center;
