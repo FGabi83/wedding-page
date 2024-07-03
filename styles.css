@@ -17,7 +17,7 @@ section {
 
 body {
   background: url(assets/wedding-landing-background.png) repeat center;
-  font-family: 'Libre Baskerville', serif;
+  font-family: Mulish, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
   color: #444349;
@@ -34,6 +34,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 a {
@@ -55,21 +56,25 @@ a:hover {
 /*==HEADER STYLES==*/
 
 .cover {
-  background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;/*A background tulajdonságban van egy új rész: 70% center/cover. Ezt a rövidítést (shorthand) akkor használjuk, amikor egyszerre szeretnénk megadni a háttér méretét és pozícióját. Az első része (70% center) adja meg a kép pozícióját. Jelen esetben ez kissé balra mozgatja a fotót az X tengelyen, hogy a menyasszony feje ne lógjon ki a képernyőről.*/
+  background: url(assets/wedding-landing-newcover.jpg) no-repeat center /cover;/*A background tulajdonságban van egy új rész: 70% center/cover. Ezt a rövidítést (shorthand) akkor használjuk, amikor egyszerre szeretnénk megadni a háttér méretét és pozícióját. Az első része (70% center) adja meg a kép pozícióját. Jelen esetben ez kissé balra mozgatja a fotót az X tengelyen, hogy a menyasszony feje ne lógjon ki a képernyőről.*/
   height: 100vh;
   width: 100vw;
   color: hsla(0,0%,100%,.9);
   text-align: center;
   display: table; 
+  
+  
 }
 
 .headline-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+  display:        table-cell;
+  vertical-align: bottom;
+  
 }
 
 .headline-text {
   margin: 0 auto;
+  width:  100%;
   padding: .625rem;
   color: hsla(0,0%,100%,.9);
   background-color: hsla(100,0%,0%,.6);
@@ -78,6 +83,7 @@ a:hover {
 .tagline, .date {
   font-size: 1.15rem;
   letter-spacing: .15rem;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .tagline::after {
@@ -111,24 +117,21 @@ h1 {
 
 /*==LOCATIONS STYLES==*/
 
-.locations h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+
 .sites img {
   width: 8rem;
 }
 
-.sites div {
+/*.sites div {
   font-family: Mulish, sans-serif;
   
-}
+}*/
 
 .sites::after {
   display: block;
   content: "";
   height: .1875rem;
-  width: 25vw;
+  width:   50vw;
   margin: 1.5rem auto;
   background-color: #444349;
 }
@@ -136,9 +139,20 @@ h1 {
 /*==PROGRAM STYLES==*/
 
 .program {
-  width: 100vw;
-  text-align: left;
-  font-family: Mulish, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  Justify-content: flex-start;
+  width:       100vw;
+  text-align:  left;
+ /* font-family: Mulish, sans-serif;*/
+}
+
+.program-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .program h2 {
@@ -170,12 +184,16 @@ h1 {
   width: 100vw;
 }
 
+.faq h3 {
+  text-align: left;
+}
+
 .Q-A h2 {
   margin-top: 1rem;
 }
 
 .question, .answer {
-  font-family: Mulish, sans-serif;
+  /*font-family: Mulish, sans-serif;*/
   text-align: left;
   font-size: 1.1rem;
 }
@@ -201,7 +219,7 @@ footer {
   color: #fff;
   width: 100vw;
   height: 10vh;
-  font-family: Mulish, sans-serif;
+  /*font-family: Mulish, sans-serif;*/
   font-size: .9rem;
   text-align: center;
   display: table
@@ -238,15 +256,15 @@ footer small {
     font-size: 1.25rem;
     }
   
-  .headline-text {
+  /*.headline-text {
     width: 50%;
     padding: 1.25rem;
     border-radius: 4px;
-  }
+  }*/
   
-  .cover {
+  /*.cover {
     background: url(assets/wedding-landing-cover.jpg) no-repeat center/cover;
-  }
+  }*/
 }
 
 /*locations*/
