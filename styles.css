@@ -64,8 +64,8 @@ a:hover {
 /*==HEADER STYLES==*/
 
 .cover {
-  background: url(assets/wedding-landing-newcover.jpg) no-repeat center /cover;/*A background tulajdonságban van egy új rész: 70% center/cover. Ezt a rövidítést (shorthand) akkor használjuk, amikor egyszerre szeretnénk megadni a háttér méretét és pozícióját. Az első része (70% center) adja meg a kép pozícióját. Jelen esetben ez kissé balra mozgatja a fotót az X tengelyen, hogy a menyasszony feje ne lógjon ki a képernyőről.*/
-  height: 100dvh;
+  background: url(assets/wedding-landing-newcover.jpg) no-repeat center /cover;
+   height: 100dvh;
   width: 100vw;
   color: hsla(0,0%,100%,.9);
   text-align: center;
@@ -215,14 +215,15 @@ header,
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 943px) {
   .is-sticky .first {
-    background-position: 50% 40%;
+    background-position: 50% 30%;
   }  
+  
  
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1500px) {
   
   .is-sticky .first .page-header {
     place-self: center;
